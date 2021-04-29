@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>KnockoutJS Simple Example</title>
+    <script src="d:/knockoutjs-lib/knockout-3.5.0.js"></script>
+</head>
+<body>
+    Name please: <input type="text" data-bind="value: myName"/><br>
+    <h1 data-bind="text: myName"> </h1>
+</body>
+<script>
+    function f1()
+    {
+        this.myName=ko.observable('');
+    }
+    ko.applyBindings(new f1());
+</script>
+</html>
